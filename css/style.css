@@ -1,0 +1,218 @@
+/*!NOTE:###################global################## */
+/* !?##############+++++++++++++++################## */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Work+Sans:ital,wght@0,700;1,400&display=swap');
+
+:root {
+   --green: #43CB83;
+   --black: #202020;
+   --red: #FB384D;
+   --white: #ffffff;
+   --orange: #FFBA00;
+   --blue: #0066cc;
+   --ash: #999999;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+}
+
+h2 {
+   font-family: 'Montserrat',
+      sans-serif;
+}
+
+p,
+a,
+text,
+ul li a {
+   font-family: 'Work Sans',
+      sans-serif;
+
+}
+
+
+ul li {
+   list-style: none;
+
+}
+
+a {
+   text-decoration: none;
+   cursor: pointer;
+}
+
+a:hover {
+   cursor: pointer;
+}
+
+p {
+   font-family: 'Montserrat',
+      sans-serif;
+}
+
+img {
+   max-width: 100%;
+   display: inline-block;
+}
+
+/*!NOTE:###################reuseable################## */
+/* !?##############+++++++++++++++################## */
+.button {
+   padding: 1rem 4.7rem;
+   text-align: center;
+   display: inline-block;
+   border-radius: 5px;
+   background: var(--green);
+}
+
+button {
+   border: none;
+}
+
+.button a {
+   font-size: 29.17px;
+}
+
+.top_text {
+   text-align: center;
+
+}
+
+.card {
+   background-color: #fff;
+   color: #333;
+   border-radius: 10px;
+   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+   padding: 20px;
+   margin: 10px;
+}
+
+/* ! containers */
+.container-sm {
+   margin: 0 auto;
+   max-width: 540px;
+}
+
+.container-md {
+   margin: 0 auto;
+   max-width: 720px;
+}
+
+.container-lg {
+   margin: 0 auto;
+   max-width: 960px;
+}
+
+.container-xl {
+   margin: 0 auto;
+   max-width: 1140px;
+}
+
+.container {
+   margin: 0 auto;
+   max-width: 1240px;
+}
+
+.container-xxl {
+   margin: 0 auto;
+   max-width: 1400px;
+}
+
+.container-fluid {
+   width: 100%;
+}
+
+.max-screen {
+   margin: 0 auto;
+   max-width: 1920px;
+}
+
+/* ! placement items*/
+
+.flex {
+   display: flex;
+   align-items: center;
+   height: 100%;
+}
+
+a .grid {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   align-items: center;
+   height: 100%;
+}
+
+.grid-12 {
+   display: grid;
+   grid-template-columns: repeat(12, 1fr);
+   align-items: center;
+   height: 100%;
+}
+
+
+/*!NOTE:###################header################## */
+/* !?##############+++++++++++++++################## */
+
+.nav-container.flex {
+   flex-direction: column;
+   height: 100vh;
+   background: rgba(31, 154, 31, 0.2);
+
+}
+
+nav ul li {
+   padding: 30px;
+   text-align: center;
+}
+
+.nav-container nav ul {
+   flex-direction: column;
+   justify-content: space-between;
+
+}
+
+.nav-container nav ul {
+   height: auto;
+
+}
+
+nav ul li a.active {
+   border-bottom: 3px solid var(--green);
+}
+
+nav ul li a {
+   transition: .2s ease-in-out;
+   color: var(--ash);
+}
+
+.apply-btn {
+   padding: 10px 15px;
+   background-color: var(--white);
+   text-align: center;
+   display: inline-block;
+   border-radius: 15px;
+   background-color: rgb(255, 255, 255);
+   box-shadow: 0px 9px 55px 0px rgba(227, 227, 233, 1);
+   border-bottom: none;
+
+}
+
+.apply-btn a.active {
+   border-bottom: none;
+
+}
+
+.head-position {
+   position: absolute;
+   width: 100%;
+   right: 0;
+   left: 0;
+
+}
+
+
+/*!NOTE:###################home################## */
+/* !?##############+++++++++++++++################## */

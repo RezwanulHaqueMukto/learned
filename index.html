@@ -17,24 +17,29 @@
 
 <body>
 
-   <header class="head-position">
-      <div class="nav-container flex max-screen ">
-         <div class="logo">
-            <a href="#home"> <img src="images/logo/Logo.png" alt="logo"></a>
+   <div class="header absolute">
+      <div class="nav-container active flex max-screen ">
+         <div class="main-nav flex">
+            <div class="logo">
+               <a href="#home"> <img src="images/logo/Logo.png" alt="logo"></a>
+            </div>
+            <nav>
+               <ul class="flex toggle">
+                  <li><a href="#home " class="active">Study</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#admission">Admission</a></li>
+                  <li><a href="#pages">Pages</a></li>
+                  <li><a href="#news">News</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <li class='apply-btn'><a href="#apply">Apply now</a></li>
+               </ul>
+            </nav>
          </div>
-         <nav>
-            <ul class="flex">
-               <li><a href="#home " class="active">Study</a></li>
-               <li><a href="#about">About</a></li>
-               <li><a href="#admission">Admission</a></li>
-               <li><a href="#pages">Pages</a></li>
-               <li><a href="#news">News</a></li>
-               <li><a href="#contact">Contact</a></li>
-               <li class='apply-btn'><a href="#apply">Apply now</a></li>
-            </ul>
-         </nav>
       </div>
-   </header>
+      <button class="nav-toggle  absolute" id="navToggle">
+         <i class="fas fa-bars"></i>
+      </button>
+   </div>
    <section id="home">
 
 

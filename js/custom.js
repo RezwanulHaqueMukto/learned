@@ -1,4 +1,10 @@
 let nav_a = document.querySelectorAll("nav ul li a");
+let nav_links = document.querySelectorAll("nav ul li");
+let nav_container = document.querySelector(".nav-container");
+let nav_toggle = document.querySelector("#navToggle");
+
+//?#####NOTE:adding  active class in nav links at main navbar####
+//! #######################
 
 nav_a.forEach((link) => {
 	link.addEventListener("click", function () {
@@ -7,4 +13,16 @@ nav_a.forEach((link) => {
 		});
 		link.classList.add("active");
 	});
+});
+nav_links.forEach((element) => {
+	element.addEventListener("click", function () {
+		nav_container.classList.add("active");
+	});
+});
+
+//?#####NOTE:toggle active in nav-container for bring mobile menu####
+//! #######################
+
+nav_toggle.addEventListener("click", function () {
+	nav_container.classList.toggle("active");
 });

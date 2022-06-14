@@ -180,11 +180,19 @@ button {
    background-color: #43cb8253;
    height: 100vh;
    transition: .5s ease-in-out;
+   /* padding: 30px; */
+
+}
+
+.main-nav {
+   width: 100%;
+
 }
 
 .nav-container.flex {
    flex-direction: column;
-   align-items: center;
+   justify-content: space-between;
+
 }
 
 .nav-container.active {
@@ -194,7 +202,7 @@ button {
 nav ul.flex {
    flex-direction: column;
    height: 100%;
-   justify-content: space-evenly;
+
 }
 
 nav ul li {
@@ -235,10 +243,12 @@ nav ul li a {
    right: 0;
    left: 0;
    top: 0%;
+
 }
 
 .main-nav.flex {
    flex-direction: column;
+
 }
 
 .nav-toggle {
@@ -255,9 +265,28 @@ nav ul li a {
 }
 
 .nav-toggle.absolute {
-   top: 2%;
+   top: 4%;
    right: 5%;
 }
+
+/* .nav-container.active {
+   transform: translateX(0);
+}
+
+.main-nav.flex {
+   flex-direction: row;
+   justify-content: space-around;
+}
+
+nav ul.flex {
+   flex-direction: row;
+
+
+}
+
+.nav-container {
+   height: 10vh;
+} */
 
 /*!NOTE:###################home################## */
 /* !?##############+++++++++++++++################## */

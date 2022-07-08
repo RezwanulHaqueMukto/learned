@@ -177,9 +177,10 @@ button {
 /*!NOTE:###################header################## */
 /* !?##############+++++++++++++++################## */
 .nav-container {
-   background-color: #43cb8253;
+   background-color: #4e5d55;
    height: 100vh;
    transition: .5s ease-in-out;
+   padding-top: 2%;
 }
 
 .nav-container.flex {
@@ -195,6 +196,7 @@ nav ul.flex {
    flex-direction: column;
    height: 100%;
    justify-content: space-evenly;
+
 }
 
 nav ul li {
@@ -232,9 +234,7 @@ nav ul li a {
 
 .header {
    width: 100%;
-   right: 0;
-   left: 0;
-   top: 0%;
+
 }
 
 .main-nav.flex {
@@ -246,7 +246,6 @@ nav ul li a {
    border-radius: 10px;
    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 
-
 }
 
 .nav-toggle i {
@@ -255,7 +254,7 @@ nav ul li a {
 }
 
 .nav-toggle.absolute {
-   top: 2%;
+   top: 5%;
    right: 5%;
 }
 

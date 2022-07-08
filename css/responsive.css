@@ -1,5 +1,29 @@
 @media only screen and (min-width: 767px) {
+   .nav-container {
+      height: 5%;
+      padding-top: 0%;
+      padding: 10px 10px;
+      background-color: transparent;
+   }
 
+   .main-nav.flex {
+      flex-direction: row;
 
+   }
+
+   nav ul.flex {
+      flex-direction: row;
+      justify-content: space-between;
+
+   }
+
+   .nav-toggle {
+      display: none;
+
+   }
+
+   .nav-container.active {
+      transform: none;
+   }
 
 }

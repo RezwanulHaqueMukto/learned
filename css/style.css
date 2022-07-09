@@ -23,6 +23,9 @@
 h2 {
    font-family: 'Montserrat',
       sans-serif;
+   font-size: 2.5rem;
+   color: var(--green);
+   line-height: 1.3;
 }
 
 p,
@@ -239,6 +242,7 @@ nav ul li a {
 
 .main-nav.flex {
    flex-direction: column;
+
 }
 
 .nav-toggle {
@@ -256,6 +260,37 @@ nav ul li a {
 .nav-toggle.absolute {
    top: 5%;
    right: 5%;
+}
+
+.home-contents {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+
+}
+
+.home-text {
+   max-width: 500px;
+}
+
+.home-text h2 {}
+
+.home-text p {
+   color: var(--ash);
+}
+
+/* .home-contents .left-side-img{
+   order: -1;
+}
+.home-contents .right-side-img {
+   order: 3;
+} */
+.home-contents .left-side-img,
+.home-contents .right-side-img {
+   /* width: 20%; */
+   margin-top: 110px;
+
 }
 
 /*!NOTE:###################home################## */

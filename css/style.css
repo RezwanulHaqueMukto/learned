@@ -274,10 +274,13 @@ nav ul li a {
    max-width: 500px;
 }
 
-.home-text h2 {}
+.home-text h2 {
+   padding-bottom: .5em;
+}
 
 .home-text p {
    color: var(--ash);
+   padding-bottom: .5em;
 }
 
 /* .home-contents .left-side-img{

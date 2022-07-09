@@ -177,7 +177,7 @@ button {
 /*!NOTE:###################header################## */
 /* !?##############+++++++++++++++################## */
 .nav-container {
-   background-color: #4e5d55;
+   background-color: #17f07c;
    height: 100vh;
    transition: .5s ease-in-out;
    padding-top: 2%;
@@ -185,7 +185,7 @@ button {
 
 .nav-container.flex {
    flex-direction: column;
-   align-items: center;
+   /* align-items: center; */
 }
 
 .nav-container.active {

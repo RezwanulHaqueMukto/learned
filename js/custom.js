@@ -26,3 +26,4 @@ nav_links.forEach((element) => {
 nav_toggle.addEventListener("click", function () {
 	nav_container.classList.toggle("active");
 });
+let hi=typeof(nav_a);

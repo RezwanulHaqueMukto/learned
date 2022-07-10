@@ -33,4 +33,24 @@
 
 }
 
-@media only screen and (max-width:1280px) {}
+@media only screen and (min-width:1280px) {
+
+   .home-contents .left-side-img,
+   .home-contents .right-side-img {
+      /* width: 20%; */
+      margin-top: 180px;
+
+
+   }
+
+   .home-contents .right-side-img {
+      padding-top: 180px;
+   }
+
+   .home-shape {
+      display: inline-block;
+      z-index: -1;
+      left: -50%;
+      bottom: -40%;
+   }
+}

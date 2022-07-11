@@ -206,7 +206,7 @@ button {
 /*!NOTE:###################header################## */
 /* !?##############+++++++++++++++################## */
 .nav-container {
-   background-color: #17f07c;
+   background-color: #67877f;
    height: 100vh;
    -webkit-transition: .5s ease-in-out;
    -o-transition: .5s ease-in-out;
@@ -266,8 +266,8 @@ nav ul li a {
    display: inline-block;
    border-radius: 15px;
    background-color: rgb(255, 255, 255);
-   -webkit-box-shadow: 0px 9px 55px 0px rgba(227, 227, 233, 1);
-   box-shadow: 0px 9px 55px 0px rgba(227, 227, 233, 1);
+   -webkit-box-shadow: 0px 9px 15px 0px rgba(227, 227, 233, 1);
+   box-shadow: 2px 0px 2px 0px rgba(227, 227, 233, 1);
    border-bottom: none;
 
 }
@@ -279,6 +279,7 @@ nav ul li a {
 
 .header {
    width: 100%;
+   z-index: 1000;
 
 }
 
@@ -287,6 +288,7 @@ nav ul li a {
    -webkit-box-direction: normal;
    -ms-flex-direction: column;
    flex-direction: column;
+   z-index: 10000;
 
 }
 
@@ -294,8 +296,8 @@ nav ul li a {
    padding: 10px;
    border-radius: 10px;
    -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+   z-index: 100;
 }
 
 .nav-toggle i {
@@ -306,8 +308,19 @@ nav ul li a {
 .nav-toggle.absolute {
    top: 5%;
    right: 5%;
+
 }
 
+
+/* .home-contents .left-side-img{
+   order: -1;
+}
+.home-contents .right-side-img {
+   order: 3;
+} */
+
+/*!NOTE:###################home################## */
+/* !?##############+++++++++++++++################## */
 .home-contents {
    display: -webkit-box;
    display: -ms-flexbox;
@@ -320,8 +333,6 @@ nav ul li a {
    justify-content: space-between;
    z-index: 1;
 
-
-
 }
 
 .home-text {
@@ -329,24 +340,41 @@ nav ul li a {
 }
 
 .home-text h2 {
+
    padding-bottom: .5em;
 }
 
 .home-text p {
    color: var(--ash);
    padding-bottom: 1.5em;
+}
+
+.home-shape {
+   display: none;
+}
+
+.home-contents .left-side-img object {
+   width: 100%;
 
 }
 
-/* .home-contents .left-side-img{
-   order: -1;
-}
 .home-contents .right-side-img {
-   order: 3;
-} */
-   .home-shape {
-    display:none;
+   display: none;
+
+}
+
+
+   .home-text {
+      margin-top: 50px;
    }
 
-/*!NOTE:###################home################## */
-/* !?##############+++++++++++++++################## */
+
+.home-contents {
+
+   flex-direction: column;
+}
+
+.home-contents h2 {
+   font-size: 1.5rem;
+
+}

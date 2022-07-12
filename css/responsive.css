@@ -1,4 +1,9 @@
 @media only screen and (min-width: 767px) {
+   .header.headerBackground {
+      background-color: #f9f9f9;
+      position: fixed;
+
+   }
    nav ul li a {
       color: #5a6e79;
    }

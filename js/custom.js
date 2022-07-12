@@ -2,6 +2,7 @@ let nav_a = document.querySelectorAll("nav ul li a");
 let nav_links = document.querySelectorAll("nav ul li");
 let nav_container = document.querySelector(".nav-container");
 let nav_toggle = document.querySelector("#navToggle");
+let header=document.querySelector(".header")
 
 //?#####NOTE:adding  active class in nav links at main navbar####
 //! #######################
@@ -26,4 +27,7 @@ nav_links.forEach((element) => {
 nav_toggle.addEventListener("click", function () {
 	nav_container.classList.toggle("active");
 });
-let hi=typeof(nav_a);
+let navWidth=header.offsetWidth;
+let scrollX=window.scrollX;
+
+console.log(scrollX);

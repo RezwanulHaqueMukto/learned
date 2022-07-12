@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 /*!NOTE:###################global################## */
 /* !?##############+++++++++++++++################## */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Work+Sans:ital,wght@0,700;1,400;100&display=swap');
@@ -107,7 +100,6 @@ button {
 
 .top_text {
    text-align: center;
-
 }
 
 .card {
@@ -117,7 +109,6 @@ button {
    -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
    padding: 20px;
-
 }
 
 /* ! containers */
@@ -217,6 +208,8 @@ button {
    transition: .5s ease-in-out;
    padding-top: 2%;
 
+
+
 }
 
 .nav-container.flex {
@@ -286,8 +279,18 @@ nav ul li a {
 }
 
 .header {
+   position: absolute;
    width: 100%;
    z-index: 1000;
+   /* margin-top: 100px; */
+
+   
+
+}
+
+.header.headerBackground {
+   background-color: #f9f9f9;
+   position: fixed;
 
 }
 
@@ -319,10 +322,7 @@ nav ul li a {
 
 }
 
-.header.headerBackground {
-   background-color: rgba(23, 222, 23, 0.338);
-   font-size: bold;
-}
+
 
 /* .home-contents .left-side-img{
    order: -1;
@@ -352,7 +352,6 @@ nav ul li a {
 }
 
 .home-text h2 {
-
    padding-bottom: .5em;
 }
 
@@ -367,22 +366,17 @@ nav ul li a {
 
 .home-contents .left-side-img object {
    width: 100%;
-
 }
 
 .home-contents .right-side-img {
    display: none;
-
 }
-
 
 .home-text {
    margin-top: 50px;
 }
 
-
 .home-contents {
-
    flex-direction: column;
 }
 
@@ -391,7 +385,6 @@ nav ul li a {
 }
 
 .home-subject {
-
    margin-top: 2rem;
 }
 
@@ -399,17 +392,12 @@ nav ul li a {
    display: grid;
    gap: 1.8rem;
    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-
-   /* grid-template-columns: repeat(3, 1fr); */
-
-
 }
 
 .home-subject .cards .card {
    flex-direction: column;
    padding: 60px 80px;
    z-index: 1;
-
 }
 
 .home-subject .cards .card img {

@@ -228,9 +228,13 @@ button {
 }
 
 .nav-container.active {
-   -webkit-transform: translateX(100%);
-   -ms-transform: translateX(100%);
-   transform: translateX(100%);
+   -webkit-transform: translateX(-100%);
+   -ms-transform: translateX(-100%);
+   transform: translateX(-100%);
+   /*display: none;
+   */
+   -moz-transform: translateX(-100%);
+   -o-transform: translateX(-100%);
 }
 
 nav ul.flex {
@@ -388,7 +392,7 @@ nav ul li a {
 
 .home-subject {
 
-   margin-top: 150px;
+   margin-top: 1.875rem;
 }
 
 .home-subject .cards {

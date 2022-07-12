@@ -1,78 +1,101 @@
 <!DOCTYPE html>
 <htm lang="en">
 
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="shortcut icon" href="images/logo/Logo.png" type="image/x-icon">
-   <script src="https://kit.fontawesome.com/c021ef8def.js" crossorigin="anonymous"></script>
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link rel="stylesheet" href="vendors/css/animate.css">
-   <link rel="stylesheet" href="css/style.css">
-   <link rel="stylesheet" href="css/responsive.css">
-   <title>Learned</title>
-</head>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" href="images/logo/Logo.png" type="image/x-icon">
+      <script src="https://kit.fontawesome.com/c021ef8def.js" crossorigin="anonymous"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="vendors/css/animate.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/responsive.css">
+      <title>Learned</title>
+   </head>
 
-<body>
+   <body>
 
-   <div class="header absolute">
-      <div class="nav-container active flex max-screen ">
-         <div class="main-nav flex">
-            <div class="logo">
-               <a href="#home"> <img src="images/logo/Logo.png" alt="logo"></a>
+      <div class="header fixed">
+         <div class="nav-container active flex max-screen ">
+            <div class="main-nav flex">
+               <div class="logo">
+                  <a href="#home"> <img src="images/logo/Logo.png" alt="logo"></a>
+               </div>
+               <nav>
+                  <ul class="flex toggle">
+                     <li><a href="#study">Study</a></li>
+                     <li><a href="#about">About</a></li>
+                     <li><a href="#admission">Admission</a></li>
+                     <li><a href="#pages">Pages</a></li>
+                     <li><a href="#news">News</a></li>
+                     <li><a href="#contact">Contact</a></li>
+                     <li class='apply-btn'><a href="#apply">Apply now</a></li>
+                  </ul>
+               </nav>
             </div>
-            <nav>
-               <ul class="flex toggle">
-                  <li><a href="#home " class="active">Study</a></li>
-                  <li><a href="#about">About</a></li>
-                  <li><a href="#admission">Admission</a></li>
-                  <li><a href="#pages">Pages</a></li>
-                  <li><a href="#news">News</a></li>
-                  <li><a href="#contact">Contact</a></li>
-                  <li class='apply-btn'><a href="#apply">Apply now</a></li>
-               </ul>
-            </nav>
          </div>
+         <button class="nav-toggle  absolute" id="navToggle">
+            <i class="fas fa-bars"></i>
+         </button>
       </div>
-      <button class="nav-toggle  absolute" id="navToggle">
-         <i class="fas fa-bars"></i>
-      </button>
-   </div>
-   <section id="home">
-      <div class="max-screen">
-         <div class="home-contents relative">
-            <div class="left-side-img">
-               <object data="images/Home/left_shape.svg"> </object>
-            </div>
-            <div class="home-text">
-               <h2>Innovation for education
-                  and society</h2>
-               <p>Our interdisciplinary majors and minors mean you can
-                  chart your own course for academic success.</p>
-               <a href="#" class="button">Visit our Campus</a>
-            </div>
-            <div class="right-side-img relative">
-               <object data="images/Home/home_right_shape.svg"></object>
-               <div class="home-shape absolute">
-                  <object data="images/circle.svg"></object>
+      <section id="home">
+         <div class="max-screen">
+            <div class="home-contents relative">
+               <div class="left-side-img">
+                  <object data="images/Home/left_shape.svg"> </object>
+               </div>
+               <div class="home-text">
+                  <h2>Innovation for education
+                     and society</h2>
+                  <p>Our interdisciplinary majors and minors mean you can
+                     chart your own course for academic success.</p>
+                  <a href="#" class="button">Visit our Campus</a>
+               </div>
+               <div class="right-side-img relative">
+                  <object data="images/Home/home_right_shape.svg"></object>
+                  <div class="home-shape absolute">
+                     <object data="images/circle.svg"></object>
+                  </div>
                </div>
             </div>
          </div>
-      </div>
-   </section>
-   
+         <div class="home-subject" id="study">
+            <div class="cards container-xl">
+               <div class="card flex  ">
+                  <img src="images/icons/engineering.png" alt="Engineering">
+                  <a href="#" class="fw-bold">Engineering</a>
+               </div>
+               <div class="card flex">
+                  <img src="images/icons/accountion.png" alt="Accounting">
+                  <a href="#" class=" fw-bold ">Accounting</a>
+               </div>
+               <div class="card flex  ">
+                  <img src="images/icons/creative.png" alt="Creative">
+                  <a href="#" class="fw-bold">Creative</a>
+               </div>
 
-
-
-
-
-   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-   <script src="vendors/js/jquery.counterup.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-   <script src="vendors/js/wow.min.js"></script>
-   <script src="vendors/js/outside_activation.js"></script>
-   <script src="js/custom.js"></script>
-</body>
+               <div class="card flex  ">
+                  <img src="images/icons/desing.png" alt="Design">
+                  <a href="#" class="fw-bold">Design</a>
+               </div>
+               <div class="card flex  ">
+                  <img src="images/icons/physics.png" alt="Physics">
+                  <a href="#" class="fw-bold">Physics</a>
+               </div>
+               <div class="card flex">
+                  <img src="images/icons/chemistry.png" alt="Chemistry">
+                  <a href="#" class="fw-bold">Chemistry</a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script src="vendors/js/jquery.counterup.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+      <script src="vendors/js/wow.min.js"></script>
+      <script src="vendors/js/outside_activation.js"></script>
+      <script src="js/custom.js"></script>
+   </body>

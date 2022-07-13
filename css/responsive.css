@@ -72,7 +72,7 @@
    }
 
    .home-subject {
-      margin-top: 5rem;
+      margin:5rem 0;
    }
 }
 
@@ -112,6 +112,6 @@
    }
 
    .home-subject {
-      margin-top: 9rem;
+      margin:6rem 0;
    }
 }

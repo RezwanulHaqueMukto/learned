@@ -30,12 +30,12 @@ nav_toggle.addEventListener("click", function () {
 //?#######NOTE:sticky menu
 //? #######################
 let topOfNav = nav_container.offsetTop;
-let scrollY = window.scrollY;
+
 console.log(topOfNav);
 function fixedNav() {
 	// console.log(navHeight);
 
-	if (window.scrollY>= topOfNav) {
+	if (window.scrollY >=topOfNav ) {
 		header.classList.add("headerBackground");
 	} else {
 		header.classList.remove("headerBackground");

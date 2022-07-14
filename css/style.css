@@ -127,16 +127,16 @@ button {
    max-width: 960px;
 }
 
-.container-xl {
-   margin: 0 auto;
-   max-width: 1140px;
-}
+
 
 .container {
+   max-width: 1140px;
+   margin: 0 auto;
+}
+.container-xl {
    margin: 0 auto;
    max-width: 1240px;
 }
-
 .container-xxl {
    margin: 0 auto;
    max-width: 1400px;

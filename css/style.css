@@ -10,7 +10,7 @@
    --orange: #FFBA00;
    --blue: #0066cc;
    --ash: #999999;
-   --text:#666666;
+   --text: #666666;
 }
 
 * {
@@ -351,8 +351,7 @@ nav ul li a {
    padding: 15px;
 }
 
-.home-contents .home-text h2,
-.about-contents .about-text h2 {
+.home-contents .home-text h2 {
    padding-bottom: .5em;
    font-size: 1.5rem;
 }
@@ -447,18 +446,26 @@ nav ul li a {
    margin: 3.125rem 0;
    justify-content: space-between;
 }
-.about-contents p{
+
+.about-contents p {
    color: var(--text);
 }
-.about-contents .left-side-img{
-   right:  12%;
+
+.about-contents .left-side-img {
+   right: 12%;
 }
- .about-text h2,
-.about-text .top-text, 
+
+.about-text h2,
+.about-text .top-text,
 .about-text .bottom-text,
 .about-count {
    padding: 0.9375rem;
 }
-.about-count{
+
+.about-count {
    justify-content: space-between;
+}
+
+.about-text h2{
+   font-size: 1.8rem;
 }

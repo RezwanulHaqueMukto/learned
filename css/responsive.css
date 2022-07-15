@@ -1,22 +1,22 @@
 @media only screen and (min-width: 767px) {
+
+   /*?NOTE: typography */
+   .home-contents .home-text h2,
+   .about-text h2 {
+      font-size: 1.8rem;
+   }
+
    .header.headerBackground {
       background-color: #f9f9f9;
       position: fixed;
-
    }
+
    nav ul li a {
       color: #5a6e79;
    }
 
    .home-text {
-      margin-top:-20px;
-   }
-
-   .home-contents .home-text h2,
-   .about-text h2
-      {
-      font-size: 1.5rem;
-
+      margin-top: -20px;
    }
 
    .home-contents {
@@ -37,8 +37,6 @@
       flex-direction: row;
       width: 100%;
       justify-content: space-around;
-
-
    }
 
    nav ul.flex {
@@ -56,7 +54,6 @@
       transform: none;
    }
 
-
    .home-contents .right-side-img {
       padding-top: 180px;
 
@@ -64,47 +61,52 @@
 
    .home-contents .left-side-img {
       display: inline-block;
-
    }
 
    .home-shape {
       display: none;
-
-
    }
 
    .home-subject {
-      margin:5rem 0;
+      margin: 5rem 0;
    }
+
    /*? about */
    .about-contents {
       flex-direction: row;
       gap: 3.5rem;
-   
+
    }
-   .about-contents>*{
+
+   .about-contents>* {
       flex: 1;
    }
+
    .about-contents .left-side-img {
       right: 0%;
    }
+
    .about-text .top-text,
-   .about-text .bottom-text{
+   .about-text .bottom-text {
       font-size: 15px;
    }
-   .about-count span{
+
+   .about-count span {
       font-size: 30px;
    }
-    .about-count p{
-       font-size: 15px;
-    }
+
+   .about-count p {
+      font-size: 15px;
+   }
 }
 
-@media screen and(min-width:1181px) {
-   .home-contents .home-text h2 {
-      font-size: 1.5rem;
-
+@media only screen and (min-width:1181px) {
+   .home-contents .home-text h2,
+   .about-text h2 {
+      font-size: 2rem;
    }
+
+  
 
 }
 
@@ -112,8 +114,9 @@
 
 
    /*?NOTE: home */
-  .home-contents h2,
-  .about-text h2 {
+   .home-contents .home-text h2,
+   
+   .about-text h2 {
       font-size: 2.5rem;
    }
 
@@ -130,15 +133,16 @@
    }
 
 
-  .home-text {
-     margin-top: -200px;
-  }
+   .home-text {
+      margin-top: -200px;
+   }
+
    .home-contents .left-side-img {
       display: inline-block;
 
    }
 
    .home-subject {
-      margin:10.5rem 0;
+      margin: 10.5rem 0;
    }
 }

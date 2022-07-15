@@ -10,6 +10,7 @@
    --orange: #FFBA00;
    --blue: #0066cc;
    --ash: #999999;
+   --text:#666666;
 }
 
 * {
@@ -133,10 +134,12 @@ button {
    max-width: 1140px;
    margin: 0 auto;
 }
+
 .container-xl {
    margin: 0 auto;
    max-width: 1240px;
 }
+
 .container-xxl {
    margin: 0 auto;
    max-width: 1400px;
@@ -329,10 +332,10 @@ nav ul li a {
 
 /*!NOTE:###################home################## */
 /* !?##############+++++++++++++++################## */
-.home-contents {
+.home-contents .flex {
    display: -webkit-box;
    display: -ms-flexbox;
-   display: flex;
+
    -webkit-box-align: center;
    -ms-flex-align: center;
    align-items: center;
@@ -345,10 +348,13 @@ nav ul li a {
 
 .home-text {
    max-width: 500px;
+   padding: 15px;
 }
 
-.home-text h2 {
+.home-contents .home-text h2,
+.about-contents .about-text h2 {
    padding-bottom: .5em;
+   font-size: 1.5rem;
 }
 
 .home-text p {
@@ -360,7 +366,8 @@ nav ul li a {
    display: none;
 }
 
-.home-contents .left-side-img object {
+.home-contents .left-side-img object,
+.about-contents object {
    width: 100%;
 }
 
@@ -376,14 +383,13 @@ nav ul li a {
    flex-direction: column;
 }
 
-.home-contents h2 {
-   font-size: 1.5rem;
-}
+
 
 .home-subject {
    margin: 2%;
 }
 
+/*? home cards part */
 .home-subject .cards {
    display: grid;
    gap: 1.8rem;
@@ -431,4 +437,28 @@ nav ul li a {
 
 .home-subject .cards>.card:nth-child(6) {
    background-color: #e3f3fc;
+}
+
+/*!NOTE:###################about################## */
+/*!?##############+++++++++++++++################## */
+
+.about-contents {
+   flex-direction: column;
+   margin: 3.125rem 0;
+   justify-content: space-between;
+}
+.about-contents p{
+   color: var(--text);
+}
+.about-contents .left-side-img{
+   right:  12%;
+}
+ .about-text h2,
+.about-text .top-text, 
+.about-text .bottom-text,
+.about-count {
+   padding: 0.9375rem;
+}
+.about-count{
+   justify-content: space-between;
 }

@@ -6,23 +6,14 @@
       font-size: 1.8rem;
    }
 
+   .about-text h2 {
+      text-align: left;
+   }
+
+   /*?NOTE: header */
    .header.headerBackground {
       background-color: #f9f9f9;
       position: fixed;
-   }
-
-   nav ul li a {
-      color: #5a6e79;
-   }
-
-   .home-text {
-      margin-top: -20px;
-   }
-
-   .home-contents {
-      flex-direction: row;
-      padding-top: 100px;
-
    }
 
    .nav-container {
@@ -31,6 +22,10 @@
       padding: 10px 10px;
       background-color: transparent;
       margin-top: 5px;
+   }
+
+   nav ul li a {
+      color: #5a6e79;
    }
 
    .main-nav.flex {
@@ -54,6 +49,18 @@
       transform: none;
    }
 
+   /*?NOTE: home */
+   .home-text {
+      margin-top: -20px;
+   }
+
+   .home-contents {
+      flex-direction: row;
+      padding-top: 100px;
+
+   }
+
+
    .home-contents .right-side-img {
       padding-top: 180px;
 
@@ -63,9 +70,7 @@
       display: inline-block;
    }
 
-   .home-shape {
-      display: none;
-   }
+
 
    .home-subject {
       margin: 5rem 0;
@@ -91,31 +96,33 @@
       font-size: 15px;
    }
 
-   .about-count span {
-      font-size: 30px;
-   }
 
-   .about-count p {
-      font-size: 15px;
-   }
 }
 
 @media only screen and (min-width:1181px) {
+
    .home-contents .home-text h2,
    .about-text h2 {
       font-size: 2rem;
    }
 
-  
 
+   .about-text {
+      padding-right: 2.5rem;
+   }
 }
 
 @media only screen and (min-width:1280px) {
 
+   /*? typography */
+   .about-text .top-text,
+   .about-text .bottom-text {
+      font-size: 18px;
+   }
 
    /*?NOTE: home */
    .home-contents .home-text h2,
-   
+
    .about-text h2 {
       font-size: 2.5rem;
    }
@@ -134,7 +141,7 @@
 
 
    .home-text {
-      margin-top: -200px;
+      margin-top: -150px;
    }
 
    .home-contents .left-side-img {
@@ -145,4 +152,25 @@
    .home-subject {
       margin: 10.5rem 0;
    }
+
+   .about-shape {
+      display: inline-block;
+      left: -110%;
+      top: -85%;
+      z-index: -10;
+   }
+
+   .about-contents .left-side-img {
+      left: -10%;
+   }
+
+   .about-count span {
+      font-size: 40px;
+
+   }
+
+   .about-count p {
+      font-size: 20px;
+   }
+
 }

@@ -400,7 +400,8 @@ nav ul li a {
 .home-subject .cards .card {
    flex-direction: column;
    padding: 60px 80px;
-   z-index: 1;
+   z-index: 11;
+
 }
 
 .home-subject .cards .card img {
@@ -464,8 +465,47 @@ nav ul li a {
 
 .about-count {
    justify-content: space-between;
+   font-family: 'Montserrat',
+      sans-serif;
+
 }
 
-.about-text h2{
-   font-size: 1.8rem;
+.about-text h2 {
+   font-size: 1.2rem;
+   text-align: center;
 }
+
+.about-count p {
+   font-size: 15px;
+
+}
+
+.about-shape {
+   display: none;
+}
+
+.about-count span {
+   font-size: 30px;
+   font-weight: bold;
+}
+
+.about-count p {
+   font-size: 15px;
+}
+
+.about-count div:nth-child(1)>* {
+   color: var(--orange);
+}
+
+.about-count div:nth-child(2)>* {
+   color: var(--red);
+}
+
+.about-count div:nth-child(3)>* {
+   color: var(--green);
+}
+
+.about-contents .left-side-img {
+   z-index: 1;
+}
+

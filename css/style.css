@@ -99,9 +99,6 @@ button {
    font-size: 29.17px;
 }
 
-.top_text {
-   text-align: center;
-}
 
 .card {
    background-color: #fff;
@@ -166,6 +163,14 @@ button {
    height: 100%;
 }
 
+.low-z {
+   z-index: -10;
+}
+
+.high-z {
+   z-index: 10;
+}
+
 .absolute {
    position: absolute;
 }
@@ -200,6 +205,79 @@ button {
    height: 100%;
 }
 
+/*?NOTE: typography  */
+/*! nav */
+nav ul li a {
+   -webkit-transition: .2s ease-in-out;
+   -o-transition: .2s ease-in-out;
+   transition: .2s ease-in-out;
+   color: var(--green);
+   font-size: 1rem;
+}
+
+/*! home */
+.home-contents .top_text {
+   text-align: center;
+}
+
+.home-contents .home-text h2 {
+   padding-bottom: .5em;
+   font-size: 1.5rem;
+}
+
+.home-subject .cards .card a {
+   font-size: 30px;
+   color: var(--black);
+}
+
+.home-text p {
+   color: var(--ash);
+   padding-bottom: 1.5em;
+}
+
+/*! about and contact*/
+.about-text h2,
+.contact-contents>.left-side h2 {
+   font-size: 1.3rem;
+   text-align: center;
+}
+
+.about-contents p {
+   color: var(--text);
+}
+
+.about-count {
+   justify-content: space-between;
+   font-family: 'Montserrat',
+      sans-serif;
+
+}
+
+
+.about-count p {
+   font-size: 15px;
+
+}
+
+.about-count span {
+   font-size: 30px;
+   font-weight: bold;
+}
+
+.contact-contents>.left-side h2 {
+   color: var(--black);
+}
+
+.contact-contents>.left-side p {
+   font-family: 'Montserrat',
+      sans-serif;
+   color: var(--text);
+   text-transform: uppercase;
+}
+
+.contact-contents>.left-side p span {
+   color: var(--red);
+}
 
 /*!NOTE:###################header################## */
 /* !?##############+++++++++++++++################## */
@@ -255,13 +333,6 @@ nav ul li a.active {
    border-bottom: 3px solid var(--green);
 }
 
-nav ul li a {
-   -webkit-transition: .2s ease-in-out;
-   -o-transition: .2s ease-in-out;
-   transition: .2s ease-in-out;
-   color: var(--green);
-   font-size: 1rem;
-}
 
 .apply-btn {
    padding: 10px 15px;
@@ -347,19 +418,11 @@ nav ul li a {
 }
 
 .home-text {
-   max-width: 500px;
-   padding: 15px;
+   max-width: 550px;
+   /* padding: 15px; */
 }
 
-.home-contents .home-text h2 {
-   padding-bottom: .5em;
-   font-size: 1.5rem;
-}
 
-.home-text p {
-   color: var(--ash);
-   padding-bottom: 1.5em;
-}
 
 .home-shape {
    display: none;
@@ -393,7 +456,7 @@ nav ul li a {
    display: grid;
    gap: 1.8rem;
 
-   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+   grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
 
 }
 
@@ -408,10 +471,6 @@ nav ul li a {
    margin-bottom: 3.75rem;
 }
 
-.home-subject .cards .card a {
-   font-size: 30px;
-   color: var(--black);
-}
 
 
 
@@ -448,10 +507,6 @@ nav ul li a {
    justify-content: space-between;
 }
 
-.about-contents p {
-   color: var(--text);
-}
-
 .about-contents .left-side-img {
    right: 12%;
 }
@@ -463,35 +518,12 @@ nav ul li a {
    padding: 0.9375rem;
 }
 
-.about-count {
-   justify-content: space-between;
-   font-family: 'Montserrat',
-      sans-serif;
-
-}
-
-.about-text h2 {
-   font-size: 1.2rem;
-   text-align: center;
-}
-
-.about-count p {
-   font-size: 15px;
-
-}
 
 .about-shape {
    display: none;
 }
 
-.about-count span {
-   font-size: 30px;
-   font-weight: bold;
-}
 
-.about-count p {
-   font-size: 15px;
-}
 
 .about-count div:nth-child(1)>* {
    color: var(--orange);
@@ -509,3 +541,16 @@ nav ul li a {
    z-index: 1;
 }
 
+
+/*!NOTE:###################contact################## */
+/*!?##############+++++++++++++++################## */
+
+.contact-contents>.left-side,
+.contact-contents>.right-side {
+   flex-direction: column;
+}
+
+.contact-contents {
+   display:flex;
+   flex-direction:column; 
+}

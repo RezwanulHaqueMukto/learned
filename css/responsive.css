@@ -1,13 +1,21 @@
 @media only screen and (min-width: 767px) {
 
    /*?NOTE: typography */
+   nav ul li a {
+      color: #5a6e79;
+   }
+
    .home-contents .home-text h2,
-   .about-text h2 {
+   .about-text h2,
+   .contact-contents>.left-side .text h2 {
       font-size: 1.8rem;
    }
 
-   .about-text h2 {
+   .about-text h2,
+   .contact-contents>.left-side .text h2,
+   .contact-contents .left-side .text p {
       text-align: left;
+      color: #000;
    }
 
    /*?NOTE: header */
@@ -24,9 +32,7 @@
       margin-top: 5px;
    }
 
-   nav ul li a {
-      color: #5a6e79;
-   }
+
 
    .main-nav.flex {
       flex-direction: row;
@@ -76,10 +82,10 @@
       margin: 5rem 0;
    }
 
-   /*? about */
+   /*?NOTE:about section*/
    .about-contents {
       flex-direction: row;
-      gap: 3.5rem;
+
 
    }
 
@@ -96,23 +102,36 @@
       font-size: 15px;
    }
 
+   /*? NOTE:contact */
+   .contact-contents>.left-side,
+   .contact-contents>.right-side {
+      flex-direction: row;
+      justify-content: space-around;
+   }
+
 
 }
 
 @media only screen and (min-width:1181px) {
 
+   /*?NOTE: home section */
    .home-contents .home-text h2,
-   .about-text h2 {
-      font-size: 2rem;
+   .about-text h2,
+   .contact-contents>.left-side .text h2 {
+      font-size: 1.9rem;
    }
 
-
+   /* ?NOTE:about section */
    .about-text {
       padding-right: 2.5rem;
    }
+
+   /*? NOTE:contact */
+
+
 }
 
-@media only screen and (min-width:1280px) {
+@media only screen and (min-width:1300px) {
 
    /*? typography */
    .about-text .top-text,
@@ -120,12 +139,21 @@
       font-size: 18px;
    }
 
-   /*?NOTE: home */
-   .home-contents .home-text h2,
+   .about-count span {
+      font-size: 40px;
+   }
 
-   .about-text h2 {
+   .about-count p {
+      font-size: 20px;
+   }
+
+   .home-contents .home-text h2,
+   .about-text h2,
+   .contact-contents>.left-side .text h2 {
       font-size: 2.5rem;
    }
+
+   /*?NOTE: home  section*/
 
    .home-contents .right-side-img {
       display: inline-block;
@@ -153,6 +181,7 @@
       margin: 10.5rem 0;
    }
 
+   /*?NOTE: about section */
    .about-shape {
       display: inline-block;
       left: -110%;
@@ -164,13 +193,13 @@
       left: -10%;
    }
 
-   .about-count span {
-      font-size: 40px;
-
+   /*? NOTE:contact */
+   .contact-contents>.left-side p {
+      padding-bottom: 10px;
    }
 
-   .about-count p {
-      font-size: 20px;
+   .contact-contents {
+      flex-direction: row;
+      justify-content: space-between;
    }
-
 }

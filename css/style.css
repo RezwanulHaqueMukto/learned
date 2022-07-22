@@ -175,6 +175,10 @@ button {
    position: absolute;
 }
 
+.sticky {
+   position: sticky;
+}
+
 .relative {
    position: relative;
 }
@@ -273,6 +277,8 @@ nav ul li a {
       sans-serif;
    color: var(--text);
    text-transform: uppercase;
+   font-size: 10px;
+   text-align: center;
 }
 
 .contact-contents>.left-side p span {
@@ -386,7 +392,7 @@ nav ul li a.active {
    width: 20px;
 }
 
-.nav-toggle.absolute {
+.nav-toggle {
    top: 5%;
    right: 5%;
 
@@ -419,7 +425,7 @@ nav ul li a.active {
 
 .home-text {
    max-width: 550px;
-   /* padding: 15px; */
+
 }
 
 
@@ -456,7 +462,7 @@ nav ul li a.active {
    display: grid;
    gap: 1.8rem;
 
-   grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 
 }
 
@@ -545,12 +551,31 @@ nav ul li a.active {
 /*!NOTE:###################contact################## */
 /*!?##############+++++++++++++++################## */
 
+
 .contact-contents>.left-side,
 .contact-contents>.right-side {
    flex-direction: column;
+
 }
 
 .contact-contents {
-   display:flex;
-   flex-direction:column; 
+   display: flex;
+   flex-direction: column;
 }
+
+#contact {
+   background: url('../images/contact/BG.jpg');
+}
+
+/* .contact-contents>.right-side form { */
+
+   /* background: red;
+   position: absolute;
+   height: 500px;
+   right: 20%;
+   top: -20%; */
+/* } */
+.contact-contents {
+   padding: 50px 0;
+}
+.about-contents 

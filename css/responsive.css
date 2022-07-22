@@ -18,6 +18,11 @@
       color: #000;
    }
 
+   .contact-contents>.left-side p {
+      font-size: 1rem;
+
+   }
+
    /*?NOTE: header */
    .header.headerBackground {
       background-color: #f9f9f9;
@@ -106,15 +111,34 @@
    .contact-contents>.left-side,
    .contact-contents>.right-side {
       flex-direction: row;
-      justify-content: space-around;
+      justify-content: space-between;
+
    }
 
+   .contact-contents .left-side {
+      justify-content: space-between;
+      width: 80%;
+   }
 
+   /* #contact::before,
+   #contact::after {
+     content: '';
+     position: absolute;
+     height: 100px;
+     top: 10%;
+     right: 0;
+     left: 0;
+     bottom: 0;
+     background: red;
+
+   } */
 }
 
 @media only screen and (min-width:1181px) {
 
    /*?NOTE: home section */
+
+
    .home-contents .home-text h2,
    .about-text h2,
    .contact-contents>.left-side .text h2 {
@@ -127,7 +151,24 @@
    }
 
    /*? NOTE:contact */
+   .contact-contents {
+      flex-direction: row;
+      justify-content: space-between;
+      
 
+   }
+
+   .contact-contents .left-side {
+      justify-content: space-between;
+
+      width: 55%;
+   }
+
+   #contact {
+      height: 400px;
+      position: relative;
+      z-index: 1;
+   }
 
 }
 
@@ -145,16 +186,12 @@
 
    .about-count p {
       font-size: 20px;
+
    }
 
-   .home-contents .home-text h2,
-   .about-text h2,
-   .contact-contents>.left-side .text h2 {
-      font-size: 2.5rem;
-   }
+
 
    /*?NOTE: home  section*/
-
    .home-contents .right-side-img {
       display: inline-block;
 
@@ -166,7 +203,6 @@
       left: -50%;
       bottom: -50%;
    }
-
 
    .home-text {
       margin-top: -150px;
@@ -194,12 +230,46 @@
    }
 
    /*? NOTE:contact */
+   #contact {
+      margin: 150px 0;
+
+   }
+
    .contact-contents>.left-side p {
+      font-size: 1rem;
       padding-bottom: 10px;
    }
 
-   .contact-contents {
-      flex-direction: row;
-      justify-content: space-between;
+}
+
+@media screen and (min-width:1440px) {
+
+   /*? typography */
+   .home-contents .home-text h2,
+   .about-text h2,
+   .contact-contents>.left-side .text h2 {
+      font-size: 2.3rem;
    }
+
+}
+
+@media screen and (min-width:1527px) {
+   /*? typography */
+
+   .home-contents .home-text h2,
+   .about-text h2,
+   .contact-contents>.left-side .text h2 {
+      font-size: 2.5rem;
+   }
+
+}
+
+@media screen and (min-width:1617px) {
+
+   /*? home */
+   .home-text {
+      max-width: 540px;
+
+   }
+
 }

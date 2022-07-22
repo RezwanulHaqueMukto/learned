@@ -139,11 +139,11 @@
    /*?NOTE: home section */
 
 
-   .home-contents .home-text h2,
+   /* .home-contents .home-text h2,
    .about-text h2,
    .contact-contents>.left-side .text h2 {
       font-size: 1.9rem;
-   }
+   } */
 
    /* ?NOTE:about section */
    .about-text {
@@ -154,21 +154,24 @@
    .contact-contents {
       flex-direction: row;
       justify-content: space-between;
-      
+
 
    }
 
    .contact-contents .left-side {
       justify-content: space-between;
 
-      width: 55%;
+      width: 50%;
    }
+   .contact-contents>.right-side {
+      width: 40%;
 
-   #contact {
-      height: 400px;
+   }
+ #contact {
+ 
       position: relative;
       z-index: 1;
-   }
+   } 
 
 }
 
@@ -239,6 +242,11 @@
       font-size: 1rem;
       padding-bottom: 10px;
    }
+
+   .contact-contents>.right-side>.contactForm form {
+      /* padding: 30px 60px; */
+   }
+
 
 }
 

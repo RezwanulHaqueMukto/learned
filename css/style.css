@@ -576,54 +576,93 @@ nav ul li a.active {
    top: -20%; */
 /* } */
 .contact-contents>.right-side {
-   width: 95%;
-
+   width: 100%;
 }
 
 .contact-contents>.right-side .contactForm form {
-
-   min-height: 560px;
-   max-width: 460px;
-   padding: 20px 15px;
+   height: 400px;
+   max-width: 100%;
    border-radius: 8px;
    background-color: rgb(255, 255, 255);
-   box-shadow: 0px 9px 70px 0px rgba(227, 227, 233, 0.004);
+   box-shadow: 0px 9px 70px 0px rgba(227, 227, 233, 1.004);
 }
 
 .contact-contents {
    padding: 50px 0;
 }
 
-.contact-contents>.right-side>.contactForm {
-   background-color: red;
-   /* width: 100%; */
 
-}
-
-.contact-contents>.right-side>.contactForm .apply {
-   justify-content: space-around;
-}
 
 .contact-contents>.right-side>.contactForm>form h2 {
+   font-weight: 100;
    font-size: 1.5rem;
-   letter-spacing: 5.5px;
+   letter-spacing: 10px;
    text-align: center;
+   margin-bottom: 5px;
+   color: var(--black);
 }
 
-form .input-box input[type="text"],
-form .input-box input[type="email"] {
+.contact-contents>.right-side>.contactForm form {
+   padding: 20px;
+}
+
+.contact-contents form .input-box input {
+   border: none;
+   font-size: 14px;
+   padding: 18px;
+   margin-bottom: 5px;
+   color: #5a6e79;
+   font-family: 'Montserrat',
+      sans-serif;
+   font-weight: 600;
+   border-bottom: .2px solid #d7e4ed;
+}
+
+.contact-contents form .input-box input:focus {
+   outline: none;
+}
+
+.contact-contents form .have-account {
+   font-size: 13px;
+   color: var(--ash);
+}
+
+.contact-contents form input[type="checkbox"] {
+   margin-bottom: 5px;
+   cursor: pointer;
+   border-radius: 50%;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+   color: var(--green);
+}
+
+.contact-contents form input[type="checkbox"]~label {
+   color: var(--ash);
+}
+
+
+
+.contact-contents form .input-box input[type="text"],
+.contact-contents form .input-box input[type="email"] {
    width: 100%;
 }
+.contact-contents .apply {
+   display: flex;
+   justify-content: space-between;
+}
 
-
-.Abgerundetes_Rechteck_5 {
-   border-radius: 8px;
-   background-color: rgb(255, 255, 255);
-   box-shadow: 0px 9px 70px 0px rgba(227, 227, 233, 0.004);
-   position: absolute;
-   left: 1093px;
-   top: 2365px;
-   width: 459px;
-   height: 563px;
-   z-index: 194;
+.apply-now {
+   background-color: var(--green);
+   color: var(--white);
+   padding: 10px 30px;
+   border-radius: 30px;
+   -webkit-border-radius: 30px;
+   -moz-border-radius: 30px;
+   -ms-border-radius: 30px;
+   -o-border-radius: 30px;
+}
+.contact-contents>.right-side {
+   margin-top: 20px;
 }

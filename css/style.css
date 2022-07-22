@@ -569,13 +569,61 @@ nav ul li a.active {
 
 /* .contact-contents>.right-side form { */
 
-   /* background: red;
+/* background: red;
    position: absolute;
    height: 500px;
    right: 20%;
    top: -20%; */
 /* } */
+.contact-contents>.right-side {
+   width: 95%;
+
+}
+
+.contact-contents>.right-side .contactForm form {
+
+   min-height: 560px;
+   max-width: 460px;
+   padding: 20px 15px;
+   border-radius: 8px;
+   background-color: rgb(255, 255, 255);
+   box-shadow: 0px 9px 70px 0px rgba(227, 227, 233, 0.004);
+}
+
 .contact-contents {
    padding: 50px 0;
 }
-.about-contents 
+
+.contact-contents>.right-side>.contactForm {
+   background-color: red;
+   /* width: 100%; */
+
+}
+
+.contact-contents>.right-side>.contactForm .apply {
+   justify-content: space-around;
+}
+
+.contact-contents>.right-side>.contactForm>form h2 {
+   font-size: 1.5rem;
+   letter-spacing: 5.5px;
+   text-align: center;
+}
+
+form .input-box input[type="text"],
+form .input-box input[type="email"] {
+   width: 100%;
+}
+
+
+.Abgerundetes_Rechteck_5 {
+   border-radius: 8px;
+   background-color: rgb(255, 255, 255);
+   box-shadow: 0px 9px 70px 0px rgba(227, 227, 233, 0.004);
+   position: absolute;
+   left: 1093px;
+   top: 2365px;
+   width: 459px;
+   height: 563px;
+   z-index: 194;
+}

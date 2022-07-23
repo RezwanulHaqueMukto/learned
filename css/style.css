@@ -605,7 +605,7 @@ nav ul li a.active {
 
 .contact-contents>.right-side>.contactForm form {
    padding: 30px;
-   margin: top 10px;
+   margin-top:10px;
 }
 
 .contact-contents form .input-box input {

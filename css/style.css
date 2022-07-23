@@ -425,10 +425,8 @@ nav ul li a.active {
 
 .home-text {
    max-width: 550px;
-
+   padding: 10px;
 }
-
-
 
 .home-shape {
    display: none;
@@ -470,6 +468,7 @@ nav ul li a.active {
    flex-direction: column;
    padding: 60px 80px;
    z-index: 11;
+   margin: 5px;
 
 }
 
@@ -575,13 +574,15 @@ nav ul li a.active {
    right: 20%;
    top: -20%; */
 /* } */
+
+
 .contact-contents>.right-side {
    width: 100%;
 }
 
 .contact-contents>.right-side .contactForm form {
-   height: 400px;
-   max-width: 100%;
+   min-height: 450px;
+   width: 100%;
    border-radius: 8px;
    background-color: rgb(255, 255, 255);
    box-shadow: 0px 9px 70px 0px rgba(227, 227, 233, 1.004);
@@ -598,12 +599,13 @@ nav ul li a.active {
    font-size: 1.5rem;
    letter-spacing: 10px;
    text-align: center;
-   margin-bottom: 5px;
+   margin: 10px 0;
    color: var(--black);
 }
 
 .contact-contents>.right-side>.contactForm form {
-   padding: 20px;
+   padding: 30px;
+   margin: top 10px;
 }
 
 .contact-contents form .input-box input {
@@ -622,21 +624,24 @@ nav ul li a.active {
    outline: none;
 }
 
-.contact-contents form .have-account {
+.contact-contents form .have-account a {
    font-size: 13px;
+   text-decoration: underline;
    color: var(--ash);
 }
 
 .contact-contents form input[type="checkbox"] {
-   margin-bottom: 5px;
+   margin: 10px 0;
    cursor: pointer;
    border-radius: 50%;
    -webkit-border-radius: 50%;
    -moz-border-radius: 50%;
    -ms-border-radius: 50%;
    -o-border-radius: 50%;
-   color: var(--green);
+   accent-color: var(--green);
 }
+
+
 
 .contact-contents form input[type="checkbox"]~label {
    color: var(--ash);
@@ -648,21 +653,24 @@ nav ul li a.active {
 .contact-contents form .input-box input[type="email"] {
    width: 100%;
 }
+
 .contact-contents .apply {
    display: flex;
    justify-content: space-between;
+   margin: 10px 0;
 }
 
-.apply-now {
+.contact-contents .apply span {
+   color: var(--text);
+}
+
+.contact-contents .apply-now {
    background-color: var(--green);
    color: var(--white);
-   padding: 10px 30px;
+   padding: 10px 20px;
    border-radius: 30px;
    -webkit-border-radius: 30px;
    -moz-border-radius: 30px;
    -ms-border-radius: 30px;
    -o-border-radius: 30px;
-}
-.contact-contents>.right-side {
-   margin-top: 20px;
 }

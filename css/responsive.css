@@ -111,7 +111,7 @@
    .contact-contents>.left-side,
    .contact-contents>.right-side {
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: space-around;
 
    }
 

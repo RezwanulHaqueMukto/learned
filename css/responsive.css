@@ -149,6 +149,7 @@
       text-align: end;
 
    }
+
    .news-top>.right-side .button {
       padding: 15px 35px;
    }
@@ -317,6 +318,14 @@
 
    .news-top>.left-side p {
       font-size: 16px;
+   }
+
+   .news-bottom .news-container h2 {
+      font-size: 2.1875rem;
+   }
+
+   .news-bottom .news-container p {
+      font-size: 0.9375rem;
    }
 }
 

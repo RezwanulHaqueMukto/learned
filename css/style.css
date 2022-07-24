@@ -675,7 +675,7 @@ nav .apply-btn a {
 }
 
 .admission-contents form input[type="checkbox"] {
-   margin: 10px;
+   margin: 10px 0;
 }
 
 .admission-contents .apply {
@@ -724,4 +724,31 @@ nav .apply-btn a {
 .news-top>.left-side p {
    line-height: 1.2;
    color: var(--text);
+}
+
+.news-bottom .news-container h2{
+   font-size: 1.5rem;
+   color: var(--black);
+   font-weight: bolder;
+}
+.news-bottom .news-container p {
+   font-size: 0.75rem;
+   color: var(--text);
+   line-height: 1.5;
+   margin: 10px 0;
+   letter-spacing: 1.5px;
+   
+}
+.news-bottom {
+   margin: 15px;
+}
+
+.news-bottom .news-container {
+   margin-bottom: 15px;
+}
+
+.news-bottom .news-container .impression {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
 }

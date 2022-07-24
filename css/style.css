@@ -1,7 +1,9 @@
 /*!NOTE:###################global################## */
 /* !?##############+++++++++++++++################## */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Work+Sans:ital,wght@0,700;1,400;100&display=swap');
-
+html{
+   scroll-padding:180px ;
+}
 :root {
    --green: #43CB83;
    --black: #202020;
@@ -356,6 +358,7 @@ nav ul li a.active {
    -ms-border-radius: 30px;
    -o-border-radius: 30px;
 }
+
 
 nav .apply-btn {
    width: 140px;

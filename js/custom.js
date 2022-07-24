@@ -35,9 +35,11 @@ console.log(topOfNav);
 function fixedNav() {
 	// console.log(navHeight);
 
-	if (window.scrollY >=topOfNav ) {
+	if (window.scrollY > topOfNav) {
+		
 		header.classList.add("headerBackground");
 	} else {
+		
 		header.classList.remove("headerBackground");
 	}
 }

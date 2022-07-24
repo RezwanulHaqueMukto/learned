@@ -43,13 +43,21 @@
       background-color: #f9f9f9;
       position: fixed;
    }
+   /* for hiding logo */
+   /* .headerBackground .main-nav .logo {
+      display: none;
+   } */
 
    .nav-container {
       height: 5%;
       padding-top: 0%;
-      padding: 10px 10px;
       background-color: transparent;
-      margin-top: 5px;
+      margin-top: 10px;
+      transition: all .10s;
+      -webkit-transition: all .10s;
+      -moz-transition: all .10s;
+      -ms-transition: all .10s;
+      -o-transition: all .10s;
    }
 
 

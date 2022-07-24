@@ -145,13 +145,24 @@
    }
 
    /*? news */
+
+
+   .news-top>.right-side .button {
+      padding: 15px 35px;
+   }
+
+   .news-top {
+      flex-direction: row;
+   }
+
    .news-top>.right-side {
       text-align: end;
 
    }
 
-   .news-top>.right-side .button {
-      padding: 15px 35px;
+   .news-bottom .news-container h2 {
+      font-size: 1.5rem;
+
    }
 }
 
@@ -314,6 +325,14 @@
 
    #news {
       margin-top: 180px;
+   }
+
+   .news-top {
+      margin-bottom: 100px;
+   }
+
+   .news-bottom {
+      gap: 50px;
    }
 
    .news-top>.left-side p {

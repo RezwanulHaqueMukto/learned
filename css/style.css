@@ -470,17 +470,18 @@ nav .apply-btn a {
 /*? home cards part */
 .home-subject .cards {
    display: grid;
-   gap: 1.8rem;
+   gap: 1.875rem;
 
-   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+   grid-template-columns: repeat(auto-fit, minmax(356px, 1fr));
 
 }
 
 .home-subject .cards .card {
    flex-direction: column;
-   padding: 60px 80px;
+   padding: 50px 70px;
    z-index: 11;
    margin: 5px;
+
 
 }
 
@@ -703,12 +704,11 @@ nav .apply-btn a {
 /*!?##############+++++++++++++++################## */
 .news-top {
    margin: 15px;
-   flex-wrap: wrap;
+   flex-direction: column;
 }
 
 .news-top>* {
-   flex: 1 1 300px;
-
+   flex-basis: 100%;
 }
 
 .news-top>.right-side {
@@ -724,21 +724,24 @@ nav .apply-btn a {
 .news-top>.left-side p {
    line-height: 1.2;
    color: var(--text);
+   line-height: 1.2;
 }
 
-.news-bottom .news-container h2{
-   font-size: 1.5rem;
+.news-bottom .news-container h2 {
+   font-size: 1.2rem;
    color: var(--black);
    font-weight: bolder;
 }
+
 .news-bottom .news-container p {
    font-size: 0.75rem;
    color: var(--text);
    line-height: 1.5;
    margin: 10px 0;
-   letter-spacing: 1.5px;
-   
+   letter-spacing: 1px;
+
 }
+
 .news-bottom {
    margin: 15px;
 }
@@ -751,4 +754,21 @@ nav .apply-btn a {
    display: flex;
    align-items: center;
    justify-content: space-between;
+   padding: 0 15px;
+
+}
+
+.news-bottom .news-container .impression span {
+   padding: 0 2px;
+}
+
+.news-bottom .news-container .impression span i,
+.news-bottom .news-container .impression .impression-date {
+   color: var(--ash);
+}
+
+.news-bottom {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+   gap: 15px;
 }

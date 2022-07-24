@@ -1,3 +1,17 @@
+@media only screen and (min-width: 550px) {
+
+   /*? #admission */
+   .admission-contents>.right-side .admissionForm form {
+      min-height: 450px;
+      min-width: 400px;
+      border-radius: 8px;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0px 9px 70px 0px rgba(227, 227, 233, 1.004);
+   }
+
+
+}
+
 @media only screen and (min-width: 767px) {
 
    /*?NOTE: typography */
@@ -7,18 +21,19 @@
 
    .home-contents .home-text h2,
    .about-text h2,
-   .contact-contents>.left-side .text h2 {
+   .admission-contents>.left-side .text h2,
+   .news-top>.left-side h2 {
       font-size: 1.8rem;
    }
 
    .about-text h2,
-   .contact-contents>.left-side .text h2,
-   .contact-contents .left-side .text p {
+   .admission-contents>.left-side .text h2,
+   .admission-contents .left-side .text p {
       text-align: left;
       color: #000;
    }
 
-   .contact-contents>.left-side p {
+   .admission-contents>.left-side p {
       font-size: 1rem;
 
    }
@@ -71,6 +86,11 @@
 
    }
 
+   .home-subject .cards .card {
+
+      margin: none;
+
+   }
 
    .home-contents .right-side-img {
       padding-top: 180px;
@@ -107,31 +127,31 @@
       font-size: 15px;
    }
 
-   /*? NOTE:contact */
-   .contact-contents>.left-side,
-   .contact-contents>.right-side {
+   /*? NOTE:admission */
+   .admission-contents>.left-side {
       flex-direction: row;
       justify-content: space-around;
 
    }
 
-   .contact-contents .left-side {
+   .admission-contents>.right-side {
+      flex-direction: row;
+      justify-content: center;
+   }
+
+   .admission-contents .left-side {
       justify-content: space-between;
       width: 80%;
    }
 
-   /* #contact::before,
-   #contact::after {
-     content: '';
-     position: absolute;
-     height: 100px;
-     top: 10%;
-     right: 0;
-     left: 0;
-     bottom: 0;
-     background: red;
+   /*? news */
+   .news-top>.right-side {
+      text-align: end;
 
-   } */
+   }
+   .news-top>.right-side .button {
+      padding: 15px 35px;
+   }
 }
 
 @media only screen and (min-width:1181px) {
@@ -150,28 +170,30 @@
       padding-right: 2.5rem;
    }
 
-   /*? NOTE:contact */
-   .contact-contents {
+   /*? NOTE:admission */
+   .admission-contents {
       flex-direction: row;
       justify-content: space-between;
 
 
    }
 
-   .contact-contents .left-side {
+   .admission-contents .left-side {
       justify-content: space-between;
 
       width: 50%;
    }
-   .contact-contents>.right-side {
+
+   .admission-contents>.right-side {
       width: 40%;
 
    }
- #contact {
- 
+
+   #admission {
+
       position: relative;
       z-index: 1;
-   } 
+   }
 
 }
 
@@ -232,22 +254,70 @@
       left: -10%;
    }
 
-   /*? NOTE:contact */
-   #contact {
-      margin: 150px 0;
+   /*? NOTE:admission */
 
+   #admission {
+      margin-top: 180px;
    }
 
-   .contact-contents>.left-side p {
+   .admission-contents {
+      padding: 0 0;
+   }
+
+   .admission-contents>.right-side {
+      width: 40%;
+   }
+
+   .admission-contents>.left-side p {
       font-size: 1rem;
       padding-bottom: 10px;
    }
 
-   .contact-contents>.right-side>.contactForm form {
-      /* padding: 30px 60px; */
+   .admission-contents>.right-side {
+      flex-direction: row;
+      justify-content: end;
+
    }
 
+   .admission-contents>.right-side>.admissionForm form {
+      padding: 30px 60px;
+      position: absolute;
+      top: -40%;
+      right: 15%;
 
+   }
+
+   .admission-contents>.right-side .admissionForm form {
+      max-height: 560px;
+      max-width: 460px;
+   }
+
+   .admission-contents form input[type="checkbox"] {
+      margin-top: 30px;
+   }
+
+   .admission-contents form .input-box input {
+      margin-bottom: 10px;
+   }
+
+   .admission-contents .apply {
+      margin: 40px 0;
+   }
+
+   .admission-contents .apply-now {
+      padding: 15px 40px;
+
+   }
+
+   /* ?news */
+
+   #news {
+      margin-top: 180px;
+   }
+
+   .news-top>.left-side p {
+      font-size: 16px;
+   }
 }
 
 @media screen and (min-width:1440px) {
@@ -255,7 +325,8 @@
    /*? typography */
    .home-contents .home-text h2,
    .about-text h2,
-   .contact-contents>.left-side .text h2 {
+   .admission-contents>.left-side .text h2,
+   .news-top>.left-side h2 {
       font-size: 2.3rem;
    }
 
@@ -266,9 +337,11 @@
 
    .home-contents .home-text h2,
    .about-text h2,
-   .contact-contents>.left-side .text h2 {
+   .news-top>.left-side h2 {
       font-size: 2.5rem;
    }
+
+
 
 }
 
@@ -280,4 +353,21 @@
 
    }
 
+}
+
+@media screen and (min-width:1700px) {
+   .admission-contents>.left-side .text {
+      padding-left: 100px;
+   }
+
+   .admission-contents>.left-side .text h2 {
+      font-size: 2.5rem;
+   }
+
+
+   .admission-contents>.left-side>object {
+      position: absolute;
+      left: -10%;
+      top: 5%;
+   }
 }

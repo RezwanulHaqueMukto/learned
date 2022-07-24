@@ -96,7 +96,7 @@ button {
 }
 
 .button a {
-   font-size: 29.17px;
+   font-size: 12px;
 }
 
 
@@ -239,9 +239,9 @@ nav ul li a {
    padding-bottom: 1.5em;
 }
 
-/*! about and contact*/
+/*! typography*/
 .about-text h2,
-.contact-contents>.left-side h2 {
+.admission-contents>.left-side h2 {
    font-size: 1.3rem;
    text-align: center;
 }
@@ -268,11 +268,11 @@ nav ul li a {
    font-weight: bold;
 }
 
-.contact-contents>.left-side h2 {
+.admission-contents>.left-side h2 {
    color: var(--black);
 }
 
-.contact-contents>.left-side p {
+.admission-contents>.left-side p {
    font-family: 'Montserrat',
       sans-serif;
    color: var(--text);
@@ -281,7 +281,7 @@ nav ul li a {
    text-align: center;
 }
 
-.contact-contents>.left-side p span {
+.admission-contents>.left-side p span {
    color: var(--red);
 }
 
@@ -341,16 +341,28 @@ nav ul li a.active {
 
 
 .apply-btn {
-   padding: 10px 15px;
+   padding: 15px 30px;
+
    background-color: var(--white);
    text-align: center;
    display: inline-block;
-   border-radius: 15px;
+   border-radius: 30px;
    background-color: rgb(255, 255, 255);
    -webkit-box-shadow: 0px 9px 15px 0px rgba(227, 227, 233, 1);
    box-shadow: 2px 0px 2px 0px rgba(227, 227, 233, 1);
    border-bottom: none;
+   -webkit-border-radius: 30px;
+   -moz-border-radius: 30px;
+   -ms-border-radius: 30px;
+   -o-border-radius: 30px;
+}
 
+nav .apply-btn {
+   width: 140px;
+}
+
+nav .apply-btn a {
+   color: var(--green);
 }
 
 .apply-btn a.active {
@@ -547,22 +559,24 @@ nav ul li a.active {
 }
 
 
-/*!NOTE:###################contact################## */
+/*!NOTE:###################admission################## */
 /*!?##############+++++++++++++++################## */
 
 
-.contact-contents>.left-side,
-.contact-contents>.right-side {
+
+.admission-contents>.left-side,
+.admission-contents>.right-side {
    flex-direction: column;
 
 }
 
-.contact-contents {
+.admission-contents {
    display: flex;
    flex-direction: column;
 }
 
-#contact {
+#admission {
+
    background: url('../images/contact/BG.jpg');
 }
 
@@ -576,25 +590,30 @@ nav ul li a.active {
 /* } */
 
 
-.contact-contents>.right-side {
+.admission-contents>.right-side {
    width: 100%;
 }
 
-.contact-contents>.right-side .contactForm form {
+.admission-contents>.right-side .admissionForm form {
    min-height: 450px;
    width: 100%;
    border-radius: 8px;
    background-color: rgb(255, 255, 255);
    box-shadow: 0px 9px 70px 0px rgba(227, 227, 233, 1.004);
+   background-image: url('../images/contact/contact.png');
+   background-repeat: no-repeat;
+
 }
 
-.contact-contents {
+
+
+.admission-contents {
    padding: 50px 0;
 }
 
 
 
-.contact-contents>.right-side>.contactForm>form h2 {
+.admission-contents>.right-side>.admissionForm>form h2 {
    font-weight: 100;
    font-size: 1.5rem;
    letter-spacing: 10px;
@@ -603,12 +622,12 @@ nav ul li a.active {
    color: var(--black);
 }
 
-.contact-contents>.right-side>.contactForm form {
+.admission-contents>.right-side>.admissionForm form {
    padding: 30px;
-   margin-top:10px;
+   margin-top: 10px;
 }
 
-.contact-contents form .input-box input {
+.admission-contents form .input-box input {
    border: none;
    font-size: 14px;
    padding: 18px;
@@ -618,20 +637,21 @@ nav ul li a.active {
       sans-serif;
    font-weight: 600;
    border-bottom: .2px solid #d7e4ed;
+   background-color: transparent;
 }
 
-.contact-contents form .input-box input:focus {
+.admission-contents form .input-box input:focus {
    outline: none;
 }
 
-.contact-contents form .have-account a {
+.admission-contents form .have-account a {
    font-size: 13px;
    text-decoration: underline;
    color: var(--ash);
+
 }
 
-.contact-contents form input[type="checkbox"] {
-   margin: 10px 0;
+.admission-contents form input[type="checkbox"] {
    cursor: pointer;
    border-radius: 50%;
    -webkit-border-radius: 50%;
@@ -643,28 +663,32 @@ nav ul li a.active {
 
 
 
-.contact-contents form input[type="checkbox"]~label {
+.admission-contents form input[type="checkbox"]~label {
    color: var(--ash);
 }
 
 
 
-.contact-contents form .input-box input[type="text"],
-.contact-contents form .input-box input[type="email"] {
+.admission-contents form .input-box input[type="text"],
+.admission-contents form .input-box input[type="email"] {
    width: 100%;
 }
 
-.contact-contents .apply {
+.admission-contents form input[type="checkbox"] {
+   margin: 10px;
+}
+
+.admission-contents .apply {
    display: flex;
    justify-content: space-between;
    margin: 10px 0;
 }
 
-.contact-contents .apply span {
+.admission-contents .apply span {
    color: var(--text);
 }
 
-.contact-contents .apply-now {
+.admission-contents .apply-now {
    background-color: var(--green);
    color: var(--white);
    padding: 10px 20px;
@@ -673,4 +697,31 @@ nav ul li a.active {
    -moz-border-radius: 30px;
    -ms-border-radius: 30px;
    -o-border-radius: 30px;
+}
+
+/*!NOTE:###################News################## */
+/*!?##############+++++++++++++++################## */
+.news-top {
+   margin: 15px;
+   flex-wrap: wrap;
+}
+
+.news-top>* {
+   flex: 1 1 300px;
+
+}
+
+.news-top>.right-side {
+   text-align: center;
+   margin-top: 20px;
+}
+
+.news-top>.left-side h2 {
+   font-size: 1.3rem;
+   padding-bottom: 15px;
+}
+
+.news-top>.left-side p {
+   line-height: 1.2;
+   color: var(--text);
 }

@@ -660,12 +660,14 @@ nav .apply-btn a {
    -ms-border-radius: 50%;
    -o-border-radius: 50%;
    accent-color: var(--green);
+
 }
 
 
 
 .admission-contents form input[type="checkbox"]~label {
    color: var(--ash);
+
 }
 
 

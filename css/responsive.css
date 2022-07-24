@@ -304,6 +304,11 @@
       max-width: 460px;
    }
 
+   .admission-contents form input[type="checkbox"]~label {
+
+      margin-left: 10px;
+   }
+
    .admission-contents form input[type="checkbox"] {
       margin-top: 30px;
    }

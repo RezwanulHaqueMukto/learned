@@ -742,7 +742,7 @@ nav .apply-btn a {
    font-size: 0.75rem;
    color: var(--text);
    line-height: 1.5;
-   margin: 10px 0;
+  
    letter-spacing: 1px;
 
 }
@@ -770,10 +770,4 @@ nav .apply-btn a {
 .news-bottom .news-container .impression span i,
 .news-bottom .news-container .impression .impression-date {
    color: var(--ash);
-}
-
-.news-bottom {
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-   gap: 15px;
 }

@@ -833,7 +833,9 @@ footer {
    line-height: 2.2;
 
 }
-
+.footer-contents .footer-top .featured .featured-content span{
+   color:#fff5f53d;
+}
 .footer-contents .footer-top .social>.social-icon {
    margin-top: 20px;
 }

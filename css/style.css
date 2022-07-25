@@ -1,9 +1,11 @@
 /*!NOTE:###################global################## */
 /* !?##############+++++++++++++++################## */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Work+Sans:ital,wght@0,700;1,400;100&display=swap');
-html{
-   scroll-padding:180px ;
+
+html {
+   scroll-padding: 180px;
 }
+
 :root {
    --green: #43CB83;
    --black: #202020;
@@ -13,6 +15,7 @@ html{
    --blue: #0066cc;
    --ash: #999999;
    --text: #666666;
+   --footerBackground: #333333;
 }
 
 * {
@@ -350,7 +353,7 @@ nav ul li a.active {
    display: inline-block;
    border-radius: 30px;
    background-color: rgb(255, 255, 255);
-   -webkit-box-shadow: 0px 9px 15px 0px rgba(227, 227, 233, 1);
+   -webkit-box-shadow: 0px 5px 9px 0px rgba(227, 227, 233, 1);
    box-shadow: 2px 0px 2px 0px rgba(227, 227, 233, 1);
    border-bottom: none;
    -webkit-border-radius: 30px;
@@ -361,7 +364,7 @@ nav ul li a.active {
 
 
 nav .apply-btn {
-   width: 140px;
+   width: 160px;
 }
 
 nav .apply-btn a {
@@ -742,7 +745,7 @@ nav .apply-btn a {
    font-size: 0.75rem;
    color: var(--text);
    line-height: 1.5;
-  
+
    letter-spacing: 1px;
 
 }
@@ -770,4 +773,118 @@ nav .apply-btn a {
 .news-bottom .news-container .impression span i,
 .news-bottom .news-container .impression .impression-date {
    color: var(--ash);
+}
+
+/*!NOTE:###################footer################## */
+/*!?##############+++++++++++++++################## */
+
+footer {
+   background-color: var(--footerBackground);
+
+}
+
+.footer-contents {
+   padding: 80px 15px;
+}
+
+.footer-top .social .social-icon {
+   color: #716565;
+}
+
+.footer-top .social .social-icon span {
+   font-size: 20px;
+   padding: 10px;
+}
+
+.footer-top .social .social-icon span i {
+   cursor: pointer;
+   height: 15px;
+   width: 15px;
+
+}
+
+.footer-top .social .social-icon span i:hover {
+   color: #0099ff;
+
+}
+
+.footer-contents .social p,
+.footer-contents .support-forum .text p,
+.footer-contents a {
+   color: #969595;
+   font-size: 14px;
+}
+
+.footer-contents .support-forum .text,
+.footer-contents .footer-top h2,
+.footer-contents .footer-top .logo {
+   color: var(--white);
+   font-size: 14px;
+   margin-bottom: 1.5rem;
+}
+
+
+
+/* .footer-contents .footer-top .social, */
+.footer-contents .footer-top .featured,
+.footer-contents .footer-top .learning,
+.footer-contents .footer-top .support {
+
+   line-height: 2.2;
+
+}
+
+.footer-contents .footer-top .social>.social-icon {
+   margin-top: 20px;
+}
+
+
+.footer-contents .footer-top>* {
+   margin-bottom: 20px;
+}
+
+
+.footer-contents .input-email input:focus {
+   outline: none;
+}
+
+.footer-contents .input-email input {
+   padding: 10px 20px;
+   color: var(--ash);
+   font-size: 13px;
+}
+
+.footer-contents .input-email a {
+   background-color: var(--green);
+   padding: 11px 20px;
+   margin-left: -15px;
+   color: var(--white);
+   width: 120px;
+   display: inline-block;
+   position: absolute;
+}
+
+.footer-bottom {
+   background-color: var(--black);
+   padding: 10px 20px;
+}
+
+.footer-bottom p,
+a {
+   color: var(--ash);
+   padding: 10px;
+}
+
+.bottom-footer-contents {
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.bottom-footer-contents>* {
+   flex-wrap: wrap;
+}
+
+.bottom-footer-contents .policy a {
+
+   gap: 20px;
 }

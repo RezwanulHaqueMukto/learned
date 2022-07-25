@@ -8,14 +8,25 @@
       background-color: rgb(255, 255, 255);
       box-shadow: 0px 9px 70px 0px rgba(227, 227, 233, 1.004);
    }
-/*? news */
 
-.news-bottom {
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
-   gap: 30px;
+   /*? news */
+
+   .news-bottom {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+      gap: 30px;
+   }
+
+   /*? footer */
+   .footer-top {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+   }
+
+.bottom-footer-contents {
+   flex-direction: row;
 }
-
 }
 
 @media only screen and (min-width: 767px) {
@@ -49,6 +60,7 @@
       background-color: #f9f9f9;
       position: fixed;
    }
+
    /* for hiding logo */
    /* .headerBackground .main-nav .logo {
       display: none;
@@ -365,6 +377,22 @@
    .news-bottom .news-container p {
       font-size: 0.9375rem;
    }
+
+   .news-bottom {
+      margin: 80px 0;
+   }
+
+   /* ?footer */
+
+   .footer-contents .footer-top h2,
+   .footer-contents .footer-top .logo {
+      margin-bottom: 1.8rem;
+   }
+
+   .footer-contents .input-email input {
+      padding: 10px 30px;
+   }
+
 }
 
 @media screen and (min-width:1440px) {

@@ -14,7 +14,7 @@
    .news-bottom {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
-      gap: 30px;
+      gap: 50px;
    }
 
    /*? footer */
@@ -24,9 +24,9 @@
       gap: 30px;
    }
 
-.bottom-footer-contents {
-   flex-direction: row;
-}
+   .bottom-footer-contents {
+      flex-direction: row;
+   }
 }
 
 @media only screen and (min-width: 767px) {
@@ -363,7 +363,7 @@
    }
 
    .news-bottom {
-      gap: 50px;
+      gap: 100px;
    }
 
    .news-top>.left-side p {
@@ -379,7 +379,7 @@
    }
 
    .news-bottom {
-      margin: 80px 0;
+      margin: 100px 0;
    }
 
    /* ?footer */

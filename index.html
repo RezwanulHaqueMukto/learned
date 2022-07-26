@@ -1,64 +1,362 @@
 <!DOCTYPE html>
-<html lang="en">
+<htm lang="en">
 
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="shortcut icon" href="images/logo/Logo.png" type="image/x-icon">
-   <script src="https://kit.fontawesome.com/c021ef8def.js" crossorigin="anonymous"></script>
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link rel="stylesheet" href="vendors/css/animate.css">
-   <link rel="stylesheet" href="css/style.css">
-   <link rel="stylesheet" href="css/responsive.css">
-   <title>Learned</title>
-</head>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" href="images/logo/1Logo.png" type="image/x-icon">
+      <script src="https://kit.fontawesome.com/c021ef8def.js" crossorigin="anonymous"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="vendors/css/animate.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/responsive.css">
+      <title>Learned</title>
+   </head>
 
-<body>
+   <body>
 
-   <div class="header absolute">
-      <div class="nav-container active flex ">
-         <div class="main-nav flex max-screen">
-            <div class="logo">
-               <a href="#home"> <img src="images/logo/Logo.png" alt="logo"></a>
+
+      <div class="header">
+         <div class="nav-container active flex max-screen">
+            <div class="main-nav flex">
+               <div class="logo">
+                  <a href="#home"> <img src="images/logo/1Logo.png" alt="logo"></a>
+               </div>
+               <nav>
+                  <ul class="flex toggle">
+                     <li><a href="#study">Study</a></li>
+                     <li><a href="#about">About</a></li>
+                     <li><a href="#admission">Admission</a></li>
+                     <li><a href="#pages">Pages</a></li>
+                     <li><a href="#news">News</a></li>
+                     <li><a href="#contact">Contact</a></li>
+                     <li class='apply-btn'><a href="#admission">Apply now</a></li>
+                  </ul>
+               </nav>
+
             </div>
-            <nav>
-               <ul class="flex toggle">
-                  <li><a href="#home " class="active">Study</a></li>
-                  <li><a href="#about">About</a></li>
-                  <li><a href="#admission">Admission</a></li>
-                  <li><a href="#pages">Pages</a></li>
-                  <li><a href="#news">News</a></li>
-                  <li><a href="#contact">Contact</a></li>
-                  <li class='apply-btn'><a href="#apply">Apply now</a></li>
-               </ul>
-            </nav>
          </div>
+         <button class="nav-toggle absolute" id="navToggle">
+            <i class="fas fa-bars"></i>
+         </button>
       </div>
-      <button class="nav-toggle  absolute" id="navToggle">
-         <i class="fas fa-bars"></i>
-      </button>
-   </div>
-   <section id="home">
+      <section id="home">
+         <div class="max-screen">
+            <div class="home-contents flex relative">
+               <div class="left-side-img">
+                  <object data="images/Home/left_shape.svg"> </object>
+               </div>
+               <div class="home-text wow fadeInDown">
+                  <h2>Innovation for education
+                     and society</h2>
+                  <p>Our interdisciplinary majors and minors mean you can
+                     chart your own course for academic success.</p>
+                  <a href="#" class="button">Visit our Campus</a>
+               </div>
+               <div class="right-side-img relative">
+                  <object data="images/Home/home_right_shape.svg"></object>
+                  <div class="home-shape absolute">
+                     <object data="images/circle-1.svg"></object>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="home-subject" id="study">
+            <div class="cards container relative wow fadeInDown" data-wow-delay=".5s">
+               <div class="card flex  ">
+                  <img src="images/icons/engineering.png" alt="Engineering">
+                  <a href="#" class="fw-bold">Engineering</a>
+               </div>
+               <div class="card flex">
+                  <img src="images/icons/accountion.png" alt="Accounting">
+                  <a href="#" class=" fw-bold ">Accounting</a>
+               </div>
+               <div class="card flex  ">
+                  <img src="images/icons/creative.png" alt="Creative">
+                  <a href="#" class="fw-bold">Creative</a>
+               </div>
+               <div class="card flex  ">
+                  <img src="images/icons/desing.png" alt="Design">
+                  <a href="#" class="fw-bold">Design</a>
+               </div>
+               <div class="card flex  ">
+                  <img src="images/icons/physics.png" alt="Physics">
+                  <a href="#" class="fw-bold">Physics</a>
+               </div>
+               <div class="card flex">
+                  <img src="images/icons/chemistry.png" alt="Chemistry">
+                  <a href="#" class="fw-bold">Chemistry</a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="about">
+         <div class="container-xl">
+            <div class="about-contents flex ">
+               <div class="left-side-img relative">
+                  <div class="about-shape absolute ">
+                     <object data="images/circle-1.svg"></object>
+                  </div>
+                  <a href="https://www.youtube.com/watch?v=Azfj1efPAH0" target="_blank">
+                     <object class="wow pulse" data="images/about/about.png"></object>
+                  </a>
+               </div>
+               <div class="about-text wow fadeInDown" data-wow-delay="1s">
+                  <h2>Limitless learning, more
+                     possibilities</h2>
+                  <p class="top-text">The University of Rochester is one of the country's top-tier research
+                     universities. Our campuses
+                     are home to 200
+                     academic majors, more than 2,000 faculty and instructional staff, and some 10,000
+                     students—approximately half of whom
+                     are women.</p>
+                  <p class="bottom-text">Learning at the University of Rochester is also on a very personal scale.
+                     Rochester remains one of
+                     the smallest and most
+                     collegiate among top research universities, with smaller classes, a low 10:1 student to teacher
+                     ratio, and increased
+                     interactions with faculty.
+                  </p>
+                  <div class="about-count flex">
+                     <div>
+                        <span class="counter">4000
+                        </span>
+                        <p>Students</p>
+                     </div>
+                     <div>
+                        <span class="counter">260
+                        </span>
+                        <p>Courses</p>
+                     </div>
+                     <div>
+                        <span class="counter">5679
+                        </span>
+                        <p>Hours Video</p>
+                     </div>
+                  </div>
+               </div>
 
+            </div>
+         </div>
+      </section>
+      <section id="admission">
+         <div class="container-xxl relative high-z">
+            <div class="admission-contents flex">
+               <div class="left-side flex">
+                  <object class="wow slideInLeft" data="images/contact/contact_left_shape.svg"></object>
+                  <div class="text wow fadeInDown" data-wow-delay="1s">
+                     <p>Start your courses! <span>Try now for free</span></p>
+                     <h2>Are you ready to work faster?</h2>
+                  </div>
+               </div>
+               <div class="right-side flex">
+                  <div class="admissionForm">
+                     <form action="">
+                        <h2>Apply Now</h2>
+                        <div class="input-box">
+                           <input type="text" name="name" id="name" placeholder="First Name">
+                        </div>
+                        <div class="input-box">
+                           <input type="text" name="last-name" id="last-name" placeholder="Last Name">
+                        </div>
+                        <div class="input-box">
+                           <input type="email" name="email" id="email" placeholder="Email">
+                        </div>
+                        <div class="input-box">
+                           <input type="email" name="confirm-email" id="confirm-email" placeholder="Confirm Email">
+                        </div>
+                        <div class="check-box">
+                           <input type="checkbox" name="checkbox" id="checkbox">
+                           <label for="checkbox">I agree with the terms and conditions</label>
+                        </div>
+                        <div class="apply">
+                           <a href="#" class="apply-now">Apply Now</a>
+                           <span>or call us <br>+49 123 456 789</span>
+                        </div>
+                        <div class="have-account">
+                           <a href="#">I already have an account</a>
+                        </div>
+                     </form>
+                  </div>
+                  <object class="wow slideInRight" data="images/contact/contact_right_shape.svg"></object>
+               </div>
+            </div>
+         </div>
+      </section>
 
-   </section>
+      <section id="news">
+         <div class="container-xl">
+            <div class="news-top flex wow fadeInDown">
+               <div class="left-side">
+                  <h2>Our University News</h2>
+                  <p>A hundred thousand grateful loves to your dear papa and mamma. Is your poor brother recovered of
+                     his rack-punch? Oh,
+                     dear! Oh, dear! How men should beware of wicked punch!</p>
+               </div>
+               <div class="right-side">
+                  <a href="#" class="button">All News Post</a>
+               </div>
+            </div>
+            <div class="news-bottom">
 
+               <div class="news-container wow fadeInDown">
+                  <h2>
+                     I am from France
+                  </h2>
+                  <p>Now the races of these two have been for some ages utterly extinct, and besides to discourse any
+                     further of them would
+                     not be at all to my purpose.</p>
+                  <div class="impression">
+                     <div class="impression-contents">
+                        <span><i class="fa-solid fa-heart"></i></span> <span>30</span>
+                        <span><i class="fa-solid fa-comment"></i></span> <span>50</span>
+                     </div>
+                     <div class="impression-date">
+                        <span>5</span> <span>November</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="news-container wow fadeInDown">
+                  <h2>
+                     Out of the Darkness
+                  </h2>
+                  <p>Looking cautiously round, to ascertain that they were not overheard, the two hags cowered nearer to
+                     the fire, and
+                     chuckled heartily.</p>
+                  <div class="impression">
+                     <div class="impression-contents">
+                        <span><i class="fa-solid fa-heart"></i></span> <span>30</span>
+                        <span><i class="fa-solid fa-comment"></i></span> <span>50</span>
+                     </div>
+                     <div class="impression-date">
+                        <span>5</span> <span>November</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="news-container wow fadeInDown">
+                  <h2>
+                     Tears for my Mom
+                  </h2>
+                  <p>It was some time before he obtained any answer, and the reply, when made, was unpropitious.</p>
+                  <div class="impression">
+                     <div class="impression-contents">
+                        <span><i class="fa-solid fa-heart"></i></span> <span>30</span>
+                        <span><i class="fa-solid fa-comment"></i></span> <span>50</span>
+                     </div>
+                     <div class="impression-date">
+                        <span>5</span> <span>November</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="news-container wow fadeInDown">
+                  <h2>
+                     How the internet is uniting the world
+                  </h2>
+                  <p>This sounded a very good reason, and Alice was quite pleased to know it. 'I never thought of that
+                     before!' she said.</p>
+                  <div class="impression">
+                     <div class="impression-contents">
+                        <span><i class="fa-solid fa-heart"></i></span> <span>30</span>
+                        <span><i class="fa-solid fa-comment"></i></span> <span>50</span>
+                     </div>
+                     <div class="impression-date">
+                        <span>5</span> <span>November</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer class="container-fluid">
+         <div class="container-xxl  footer-contents wow fadeInDown " data-wow-delay=".5s">
+            <div class="footer-top">
+               <div class="social">
+                  <div class="logo">
+                     <img src="images/logo/footer_logo.png" alt="footer logo">
+                  </div>
+                  <div class="text">
+                     <p>Edumodo focuses on creating magnificent education websites with ease. Take the lead in the race
+                        with Learned.</p>
+                  </div>
+                  <div class="social-icon">
+                     <span><i class="fa-brands fa-twitter"></i></span>
+                     <span><i class="fa-brands fa-linkedin"></i></span>
+                     <span><i class="fa-brands fa-facebook-square"></i></span>
+                     <span><i class="fa-brands fa-skype"></i></span>
+                     <span><i class="fa-brands fa-pinterest-square"></i></span>
+                     <span><i class="fa-brands fa-apple"></i></span>
+                  </div>
+               </div>
+               <div class="featured">
+                  <h2>FEATURED PROGRAMS</h2>
+                  <div class="featured-content">
+                     <a href="#">Fixed responsive issue</a>
+                     <span>- Just Now</span>
+                  </div>
+                  <div class="featured-content">
+                     <a href="#">New portfolio grid layout</a>
+                     <span>- Today</span>
+                  </div>
+                  <div class="featured-content">
+                     <a href="#">Tested & approved WP 3.6</a>
+                     <span>- 5Hours Ago</span>
+                  </div>
+                  <div class="featured-content">
+                     <a href="#">Fixed google map issue</a>
+                     <span>- Yesterday</span>
+                  </div>
+               </div>
+               <div class="learning">
+                  <h2>LEARNING</h2>
+                  <div class="learn-content">
+                     <div class="link">
+                        <a href="#">Our Plans</a>
+                     </div>
+                     <div class="link">
+                        <a href="#">Free Trial</a>
+                     </div>
+                     <div class="link">
+                        <a href="#">Academic Solution</a>
+                     </div>
+                     <div class="link">
+                        <a href="#">Business Solution</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="support-forum">
+                  <h2>Support Forum</h2>
+                  <div class="text">
+                     <p>Write your email into below field and join our quick support forum.</p>
+                  </div>
+                  <div class="input-email relative">
+                     <input type="email" placeholder="Enter address" name="email" id="support-forum">
+                     <a href="#">GET HELP</a>
+                  </div>
+               </div>
+            </div>
 
-
-
-
-
-
-
-   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-   <script src="vendors/js/jquery.counterup.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-   <script src="vendors/js/wow.min.js"></script>
-   <script src="vendors/js/outside_activation.js"></script>
-   <script src="js/custom.js"></script>
-</body>
-
-</html>
+         </div>
+         <div class="footer-bottom" id="contact">
+            <div class="bottom-footer-contents container-xxl flex">
+               <div class="copyright">
+                  <p>Copyright © 2019 learned</p>
+               </div>
+               <div class="policy">
+                  <a href="#">Site Map</a>
+                  <a href="#">Privacy Policy</a>
+                  <a href="#">Website Use Policy</a>
+                  <a href="#">cookie Policy</a>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script src="vendors/js/jquery.counterup.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+      <script src="vendors/js/wow.min.js"></script>
+      <script src="vendors/js/outside_activation.js"></script>
+      <script src="js/custom.js"></script>
+   </body>

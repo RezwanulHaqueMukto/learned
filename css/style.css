@@ -884,6 +884,7 @@ a {
 
 .bottom-footer-contents>* {
    flex-wrap: wrap;
+   text-align: center;
 }
 
 .bottom-footer-contents .policy a {

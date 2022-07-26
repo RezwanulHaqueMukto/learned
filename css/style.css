@@ -1,9 +1,10 @@
 /*!NOTE:###################global################## */
 /* !?##############+++++++++++++++################## */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Work+Sans:ital,wght@0,700;1,400;100&display=swap');
+
 /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Source+Code+Pro:wght@200&family=Work+Sans:ital,wght@0,700;1,400&display=swap'); */
 html {
-   scroll-padding: 180px;
+   scroll-padding-top: var(--scroll-padding, 180px);
 }
 
 :root {
@@ -833,9 +834,11 @@ footer {
    line-height: 2.2;
 
 }
-.footer-contents .footer-top .featured .featured-content span{
-   color:#fff5f53d;
+
+.footer-contents .footer-top .featured .featured-content span {
+   color: #fff5f53d;
 }
+
 .footer-contents .footer-top .social>.social-icon {
    margin-top: 20px;
 }
@@ -871,11 +874,11 @@ footer {
    padding: 10px 20px;
 }
 
-.footer-bottom p,
+/* .footer-bottom p,
 a {
    color: var(--ash);
    padding: 10px;
-}
+} */
 
 .bottom-footer-contents {
    flex-direction: column;

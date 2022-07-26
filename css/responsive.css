@@ -27,9 +27,10 @@
    .bottom-footer-contents {
       flex-direction: row;
    }
+   
 }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 780px) {
 
    /*?NOTE: typography */
    nav ul li a {
@@ -57,7 +58,7 @@
 
    /*?NOTE: header */
    .header.headerBackground {
-      background-color: #f9f9f9;
+      background-color: var(--white);
       position: fixed;
    }
 

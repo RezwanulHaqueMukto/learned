@@ -874,11 +874,11 @@ footer {
    padding: 10px 20px;
 }
 
-/* .footer-bottom p,
-a {
+.footer-bottom p,
+.footer-bottom a {
    color: var(--ash);
    padding: 10px;
-} */
+}
 
 .bottom-footer-contents {
    flex-direction: column;
